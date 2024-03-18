@@ -31,5 +31,4 @@ public class FakerData {
     public String state = faker.options().option(stateWithCity.keySet().toArray()).toString();
     public String city = faker.options().option(stateWithCity.get(state).toArray()).toString();
 
-
 }

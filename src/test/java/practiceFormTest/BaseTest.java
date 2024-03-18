@@ -24,6 +24,9 @@ public class BaseTest {
         Configuration.holdBrowserOpen = appConfig.is_hold_browser_open();
         Configuration.timeout = appConfig.timeout();
         Configuration.pageLoadTimeout = appConfig.pageLoadTimeout();
+        //ускоряет загрузку страницы
+        Configuration.pageLoadStrategy = "eager";
+
     }
 
     @AfterEach
